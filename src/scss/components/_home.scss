@@ -1,0 +1,28 @@
+@import "scss/abstracts/mixins";
+
+.home {
+  main {
+    height: 300vh;
+    section {
+      @include flex-row-spaceEvenly;
+      align-items: center;
+      height: 50vh;
+    }
+  }
+  .banner {
+    h2 {
+      font-size: 2em;
+      white-space: nowrap;
+      text-align: center;
+    }
+    margin: 25% auto auto;
+    padding: 2em;
+    width: 100vh;
+  }
+  .card {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}

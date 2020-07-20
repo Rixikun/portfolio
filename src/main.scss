@@ -7,6 +7,9 @@
 //fonts
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans&display=swap");
 
+//stylesheets
+@import "./scss/components/home";
+
 body {
   font-family: "Heebo", sans-serif;
 }
