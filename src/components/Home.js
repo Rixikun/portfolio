@@ -21,8 +21,8 @@ const Home = () => {
       </header>
 
       <main className="container">
-        <section className="card">
-          <img src={egg} alt="" />
+        <section className="card" data-aos="zoom-out">
+          <img src={egg} alt="" data-aos="zoom-in" />
           <div>
             <h3>card egg</h3>
             <p>
@@ -38,7 +38,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="card" data-aos="fade-left">
+        <section className="card" data-aos="flip-left">
           <img src={cat} alt="" />
           <div>
             <h3>card 1</h3>
@@ -72,7 +72,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="card" data-aos="fade-left">
+        <section className="card" data-aos="fade-up">
           <img src={bg_beach_vertical} alt="" />
           <div>
             <h3>card 3</h3>
@@ -89,7 +89,11 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="card" data-aos="fade-right">
+        <section
+          className="card"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+        >
           <img src={bg_pastel_fractals} alt="" />
           <div>
             <h3>card 4</h3>
@@ -106,7 +110,12 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="card" data-aos="fade-left">
+        <section
+          className="card"
+          data-aos="fade-left"
+          data-aos-easing="ease-out-back"
+          data-aos-duration="2000"
+        >
           <img src={bg_cube} alt="" />
           <div>
             <h3>card 5</h3>
