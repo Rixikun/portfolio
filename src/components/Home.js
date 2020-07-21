@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation } from "./index";
+import { Navigation, Works, Contact, About } from "./index";
 import { Parallax } from "react-parallax";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +15,7 @@ const egg = require("../img/egg.png");
 const Home = () => {
   return (
     <div className="home">
-      <header>
+      <header data-aos="zoom-out" data-aos-easing="ease-out-sine">
         <Parallax
           bgImage={bg_droplets}
           strength={800}
@@ -29,7 +29,13 @@ const Home = () => {
                 transform: `scale(${percent * 5})`,
               }}
             >
-              <h2>Welcome</h2>
+              <h2
+                style={{
+                  filter: `blur(${-1 + percent * 2.4}px)`,
+                }}
+              >
+                Welcome
+              </h2>
             </div>
           )}
         >
@@ -49,11 +55,11 @@ const Home = () => {
             <img src={cat} />
           </div>
           <div data-aos="fade-left" data-aos-easing="ease-out-quart">
-            <h2>About me</h2>
+            <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
+              About me
+            </h2>
             <p>
-              I'm Lin, a web developer that's just starting out and located in
-              New York, NY. I enjoy creating responsive layouts and intuitive
-              UI.
+              <About />
             </p>
           </div>
         </section>
@@ -68,15 +74,11 @@ const Home = () => {
             <img src={egg} />
           </div>
           <div data-aos="fade-right" data-aos-easing="ease-out-quart">
-            <h2> My work</h2>
+            <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
+              My work
+            </h2>
             <p>
-              Experienced in: JavaScript, Node, React, Redux, HTML, CSS, SCSS,
-              Express, Sequelize
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
+              <Works />
             </p>
           </div>
         </section>
@@ -91,26 +93,17 @@ const Home = () => {
             <img src={bg_beach_vertical} />
           </div>
           <div data-aos="fade-left" data-aos-easing="ease-out-quart">
-            <h2>Contact me</h2>
-            <p>email: linyianxia@gmail.com</p>
+            <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
+              Contact me
+            </h2>
+            <p>
+              <a href="mailto:linyianxia@gmail.com">
+                <i className="fa fa-envelope-o"></i> linyianxia@gmail.com
+              </a>
+            </p>
           </div>
         </section>
-        <div className="links">
-          <ul>
-            <a>
-              <i className="fa fa-linkedin"></i>
-            </a>
-            <a>
-              <i className="fa fa-github"></i>
-            </a>
-            <a>
-              <i className="fa fa-twitter"></i>
-            </a>
-            <a>
-              <i className="fa fa-instagram"></i>
-            </a>
-          </ul>
-        </div>
+        <Contact />
       </main>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       {AOS.init({

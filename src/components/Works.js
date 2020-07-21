@@ -2,13 +2,21 @@ import React from "react";
 
 const Works = () => {
   return (
-    <div>
+    <>
+      Experienced in: JavaScript, Node, React, Redux, HTML, CSS, SCSS, Express,
+      Sequelize
       <ul>
-        <li>work 1</li>
-        <li>work 2</li>
-        <li>work 3</li>
+        <li>
+          <a href="https://mock-campaign.herokuapp.com">
+            Mock Campaign - personal project
+          </a>
+        </li>
+        <li>
+          <a href="https://jetsweatfitness.com/">Jetsweat Fitness - intern</a>
+        </li>
+        <li>3</li>
       </ul>
-    </div>
+    </>
   );
 };
 
