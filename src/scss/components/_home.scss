@@ -1,7 +1,8 @@
 @import "scss/abstracts/mixins";
+@import "scss/abstracts/colors";
 
 .home {
-  background: linear-gradient(white, black);
+  background: linear-gradient(#666, black);
 
   .banner {
     margin: auto;
@@ -15,7 +16,7 @@
       white-space: nowrap;
       text-align: center;
       margin: 40% auto auto;
-      border-bottom: solid 1px #ccc;
+      border-bottom: solid 1px #444;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
       padding: 0.25em;
@@ -24,7 +25,7 @@
     }
   }
   .container {
-    height: 400vh;
+    height: 3000px;
     margin: auto;
     overflow: clip;
     padding: 0 2rem;
@@ -39,38 +40,70 @@
         height: 100%;
         width: 100%;
       }
-      h3 {
-        font-size: 2em;
-        margin-bottom: 2em;
-      }
-      h3,
+      h2,
       p {
-        background-color: #fefefe;
         border-radius: 20px;
-        padding: 1rem;
+        padding: 2rem;
+      }
+      h2 {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: solid 1px $color-indigo-light;
+        font-size: 2.4em;
+        margin-bottom: 2em;
+        font-family: "Work Sans";
+        color: $color-indigo-light;
+      }
+      p {
+        font-size: 1.6em;
+        background-color: #fefefe;
+        border-bottom: solid 4px $color-indigo-light;
       }
       & div {
         padding: 2em;
       }
-      &:nth-child(odd) .img__container {
-        order: 2;
+      .img__container {
         padding: 0;
         width: 100%;
         height: 100%;
       }
-      &:nth-child(even) .img__container {
-        padding: 0;
-        width: 100%;
-        height: 100%;
+      &:nth-child(odd) .img__container {
+        order: 2;
+      }
+      &:nth-child(even) .img__container img {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      &:nth-child(odd) .img__container img {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
     }
     .verticalLine {
       position: absolute;
       z-index: 1;
-      height: inherit;
+      height: 2600px;
       width: 6px;
       background-color: white;
       left: calc(50% - 3px);
     }
   }
+}
+
+.links {
+  @include flex-row-spaceEvenly;
+  align-items: center;
+  color: #ccc;
+  height: 200px;
+  width: 100%;
+
+  i {
+    width: 20px;
+    margin: 0 20px;
+    transform: scale(2);
+  }
+}
+
+#lastCard {
+  margin-bottom: 100px;
 }

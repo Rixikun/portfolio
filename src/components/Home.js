@@ -49,7 +49,7 @@ const Home = () => {
             <img src={cat} />
           </div>
           <div data-aos="fade-left" data-aos-easing="ease-out-quart">
-            <h3>About me</h3>
+            <h2>About me</h2>
             <p>
               I'm Lin, a web developer that's just starting out and located in
               New York, NY. I enjoy creating responsive layouts and intuitive
@@ -68,7 +68,7 @@ const Home = () => {
             <img src={egg} />
           </div>
           <div data-aos="fade-right" data-aos-easing="ease-out-quart">
-            <h3> My work</h3>
+            <h2> My work</h2>
             <p>
               Experienced in: JavaScript, Node, React, Redux, HTML, CSS, SCSS,
               Express, Sequelize
@@ -80,7 +80,7 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <section className="card" data-aos="fade-in">
+        <section id="lastCard" className="card" data-aos="fade-in">
           <div
             className="img__container"
             data-aos="fade-right"
@@ -91,10 +91,26 @@ const Home = () => {
             <img src={bg_beach_vertical} />
           </div>
           <div data-aos="fade-left" data-aos-easing="ease-out-quart">
-            <h3>Contact me</h3>
+            <h2>Contact me</h2>
             <p>email: linyianxia@gmail.com</p>
           </div>
         </section>
+        <div className="links">
+          <ul>
+            <a>
+              <i className="fa fa-linkedin"></i>
+            </a>
+            <a>
+              <i className="fa fa-github"></i>
+            </a>
+            <a>
+              <i className="fa fa-twitter"></i>
+            </a>
+            <a>
+              <i className="fa fa-instagram"></i>
+            </a>
+          </ul>
+        </div>
       </main>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       {AOS.init({
