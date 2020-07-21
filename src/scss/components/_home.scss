@@ -82,16 +82,24 @@
     .verticalLine {
       position: absolute;
       z-index: 1;
-      height: 2600px;
+      height: 2700px;
       width: 4px;
       background-color: white;
       left: calc(50% - 2px);
+    }
+  }
+  @include breakpoint(upToTablet) {
+    .container {
+      .verticalLine {
+        background-color: red;
+      }
     }
   }
 }
 
 #lastCard {
   margin-bottom: 100px;
+  margin-top: 500px;
 }
 #accountabuddy {
   width: 280px;

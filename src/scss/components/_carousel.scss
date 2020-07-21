@@ -1,7 +1,13 @@
-.carousel {
-  width: 500px;
-  height: 500px;
+.home .container .card div .carousel {
+  padding: 0;
+  .maxMobile {
+    max-height: calc(15 * 50px);
+    max-width: calc(7 * 50px);
+    width: auto;
+    margin: auto;
+  }
 }
+
 .carousel-caption {
   position: initial !important;
 }

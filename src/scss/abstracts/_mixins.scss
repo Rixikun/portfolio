@@ -17,6 +17,10 @@
     @media (min-width: 37.5em) {
       @content;
     }
+  } @else if $point == upToTablet {
+    @media (max-width: 50.3em) {
+      @content;
+    }
   } @else if $point == mobileonly {
     @media (max-width: 37.5em) {
       @content;

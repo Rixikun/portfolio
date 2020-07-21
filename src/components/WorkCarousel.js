@@ -2,8 +2,9 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.css";
 
-const cat = require("../img/Cat.jpg");
-const egg = require("../img/egg.png");
+const MockCampaign = require("../img/MockCampaign.gif");
+const NewJet = require("../img/NewJet.gif");
+const OldJet = require("../img/OldJet.gif");
 const accountabuddy = require("../img/accountabuddy_sample.gif");
 
 const WorkCarousel = () => {
@@ -11,23 +12,33 @@ const WorkCarousel = () => {
     <div className="carousel">
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100" src={egg} alt="First slide" />
+          <img
+            className="d-block w-100 maxMobile"
+            src={MockCampaign}
+            alt="Mock Campaign"
+          />
           <Carousel.Caption>
             <h3>Mock Campaign</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={cat} alt="Third slide" />
+          <img className="d-block w-100" src={OldJet} alt="Jetsweat Before" />
 
           <Carousel.Caption>
-            <h3>Jetsweat Fitness</h3>
+            <h3>Jetsweat Fitness Before</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={NewJet} alt="Jetsweat After" />
+          <Carousel.Caption>
+            <h3>Jetsweat Fitness After</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 maxMobile"
             src={accountabuddy}
-            alt="Third slide"
+            alt="AccountaBuddy"
           />
 
           <Carousel.Caption>
