@@ -10,7 +10,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 //stylesheets
 @import "./scss/components/home";
+@import "./scss/components/contact";
 
 body {
   font-family: "Nunito Sans";
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }

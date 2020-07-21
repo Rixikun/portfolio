@@ -1,0 +1,36 @@
+@import "scss/abstracts/mixins";
+@import "scss/abstracts/colors";
+
+.contact {
+  @include flex-row-spaceEvenly;
+  align-items: center;
+  color: #ccc;
+  height: 200px;
+  width: 100%;
+
+  i {
+    width: 20px;
+    margin: 0 20px;
+    transform: scale(2);
+    &:hover,
+    &:active {
+      transform: scale(2.5);
+    }
+    &:active {
+      color: $color-indigo-lighter;
+    }
+  }
+}
+
+a {
+  color: $color-indigo;
+
+  &:hover,
+  &:active {
+    color: $color-indigo-light;
+    cursor: pointer;
+  }
+  &:active {
+    color: $color-indigo-dark;
+  }
+}
