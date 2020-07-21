@@ -8,6 +8,7 @@ const bg_beach = require("../img/bg_beach.webp");
 const bg_beach_vertical = require("../img/bg_beach_vertical.jpg");
 const bg_cube = require("../img/bg_cube.jpg");
 const bg_pastel_fractals = require("../img/bg_pastel_fractals.jpg");
+const bg_droplets = require("../img/bg_droplets.jpg");
 const cat = require("../img/Cat.jpg");
 const egg = require("../img/egg.png");
 
@@ -16,7 +17,7 @@ const Home = () => {
     <div className="home">
       <header>
         <Parallax
-          bgImage={bg_cube}
+          bgImage={bg_droplets}
           strength={800}
           bgImageStyle={{
             width: "100vw",
@@ -28,7 +29,7 @@ const Home = () => {
                 transform: `scale(${percent * 5})`,
               }}
             >
-              <h2>Lin's Portfolio</h2>
+              <h2>Welcome</h2>
             </div>
           )}
         >

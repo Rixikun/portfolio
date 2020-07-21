@@ -2,20 +2,26 @@
 
 .home {
   background: linear-gradient(white, black);
+
   .banner {
-    h2 {
-      font-size: 2em;
-      white-space: nowrap;
-      text-align: center;
-      margin: 40% auto auto;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 20px;
-      padding: 0.25em;
-      width: 300px;
-    }
     margin: auto;
     padding: 2em;
     width: 100vh;
+    h2 {
+      font-size: 2em;
+      font-weight: 100;
+      font-family: "Work Sans";
+      color: white;
+      white-space: nowrap;
+      text-align: center;
+      margin: 40% auto auto;
+      border-bottom: solid 1px #ccc;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      padding: 0.25em;
+      width: 300px;
+      backdrop-filter: blur(4px);
+    }
   }
   .container {
     height: 400vh;
@@ -26,9 +32,9 @@
     .card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 600px;
       grid-gap: 6px;
-      margin: 250px 0;
-      height: 600px;
+      margin: 100px 0 400px 0;
       img {
         height: 100%;
         width: 100%;
@@ -50,12 +56,12 @@
         order: 2;
         padding: 0;
         width: 100%;
-        height: 80vh;
+        height: 100%;
       }
       &:nth-child(even) .img__container {
         padding: 0;
         width: 100%;
-        height: 80vh;
+        height: 100%;
       }
     }
     .verticalLine {
