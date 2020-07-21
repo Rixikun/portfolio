@@ -73,7 +73,7 @@ const Home = () => {
             data-aos-duration="1200"
             data-aos-delay="500"
           >
-            <img src={accountabuddy} id="accountabuddy" />
+            <WorkCarousel />
           </div>
           <div data-aos="fade-right" data-aos-easing="ease-out-quart">
             <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
