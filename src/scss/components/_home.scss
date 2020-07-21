@@ -35,6 +35,8 @@
       grid-template-rows: 600px;
       grid-gap: 4px;
       margin: 100px 0 400px 0;
+      background: transparent !important;
+      border: none;
       img {
         height: 100%;
         width: 100%;
@@ -91,4 +93,7 @@
 
 #lastCard {
   margin-bottom: 100px;
+}
+#accountabuddy {
+  width: 280px;
 }
