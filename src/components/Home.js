@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Works, Contact, About } from "./index";
+import { Works, Contact, About, WorkCarousel } from "./index";
 import { Parallax } from "react-parallax";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,7 +11,8 @@ const bg_pastel_fractals = require("../img/bg_pastel_fractals.jpg");
 const bg_droplets = require("../img/bg_droplets.jpg");
 const cat = require("../img/Cat.jpg");
 const egg = require("../img/egg.png");
-
+const accountabuddy = require("../img/accountabuddy_sample.gif");
+const profile = require("../img/profile_cropped.png");
 const Home = () => {
   return (
     <div className="home">
@@ -52,7 +53,7 @@ const Home = () => {
             data-aos-duration="1200"
             data-aos-delay="500"
           >
-            <img src={cat} />
+            <img src={profile} />
           </div>
           <div data-aos="fade-left" data-aos-easing="ease-out-quart">
             <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
@@ -71,7 +72,8 @@ const Home = () => {
             data-aos-duration="1200"
             data-aos-delay="500"
           >
-            <img src={egg} />
+            <img src={accountabuddy} id="accountabuddy" />
+            {/* <WorkCarousel /> */}
           </div>
           <div data-aos="fade-right" data-aos-easing="ease-out-quart">
             <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">

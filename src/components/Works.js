@@ -8,13 +8,17 @@ const Works = () => {
       <ul>
         <li>
           <a href="https://mock-campaign.herokuapp.com">
-            Mock Campaign - personal project
+            Mock Campaign - Personal project
           </a>
         </li>
         <li>
-          <a href="https://jetsweatfitness.com/">Jetsweat Fitness - intern</a>
+          <a href="https://jetsweatfitness.com/">Jetsweat Fitness - Intern</a>
         </li>
-        <li>3</li>
+        <li>
+          <a href="https://github.com/Dr-DJ1909/Accountabuddy">
+            Accountabuddy - Capstone group proj
+          </a>
+        </li>
       </ul>
     </>
   );
