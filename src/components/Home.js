@@ -13,6 +13,8 @@ const cat = require("../img/Cat.jpg");
 const egg = require("../img/egg.png");
 const accountabuddy = require("../img/accountabuddy_sample.gif");
 const profile = require("../img/profile_cropped.png");
+const profile_bodyshot = require("../img/Profile_Fingerlakes.png");
+const hand = require("../img/illustration_hand.jpg");
 
 const Home = () => {
   return (
@@ -54,7 +56,7 @@ const Home = () => {
             data-aos-duration="1200"
             data-aos-delay="500"
           >
-            <img src={profile} />
+            <img src={profile_bodyshot} />
           </div>
           <div data-aos="fade-left" data-aos-easing="ease-out-quart">
             <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
@@ -92,7 +94,7 @@ const Home = () => {
             data-aos-duration="1200"
             data-aos-delay="500"
           >
-            <img src={bg_beach_vertical} />
+            <img src={hand} />
           </div>
           <div data-aos="fade-left" data-aos-easing="ease-out-quart">
             <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
