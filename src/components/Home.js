@@ -23,9 +23,6 @@ const Home = () => {
         <Parallax
           bgImage={bg_droplets}
           strength={800}
-          bgImageStyle={{
-            width: "100vw",
-          }}
           renderLayer={(percent) => (
             <div
               className="banner"
@@ -54,7 +51,7 @@ const Home = () => {
             data-aos="fade-right"
             data-aos-easing="ease-out-quart"
             data-aos-duration="1200"
-            data-aos-delay="500"
+            data-aos-delay="200"
           >
             <img src={profile_bodyshot} />
           </div>
@@ -73,7 +70,7 @@ const Home = () => {
             data-aos="fade-left"
             data-aos-easing="ease-out-quart"
             data-aos-duration="1200"
-            data-aos-delay="500"
+            data-aos-delay="200"
           >
             <WorkCarousel />
           </div>
@@ -92,7 +89,7 @@ const Home = () => {
             data-aos="fade-right"
             data-aos-easing="ease-out-quart"
             data-aos-duration="1200"
-            data-aos-delay="500"
+            data-aos-delay="200"
           >
             <img src={hand} />
           </div>

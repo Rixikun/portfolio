@@ -1,3 +1,6 @@
+@import "scss/abstracts/colors";
+@import "scss/abstracts/mixins";
+
 .home .container .card div .carousel {
   padding: 0;
   .maxMobile {
@@ -10,4 +13,24 @@
 
 .carousel-caption {
   position: initial !important;
+}
+
+@include breakpoint(upToTablet) {
+  .home .container .card div .carousel {
+    @include flex-col-spaceEvenly;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+  }
+  .carousel-indicators {
+    bottom: -20px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: brightness(0);
+  }
 }
