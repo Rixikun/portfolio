@@ -4,15 +4,7 @@ import { Parallax } from "react-parallax";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const bg_beach = require("../img/bg_beach.webp");
-const bg_beach_vertical = require("../img/bg_beach_vertical.jpg");
-const bg_cube = require("../img/bg_cube.jpg");
-const bg_pastel_fractals = require("../img/bg_pastel_fractals.jpg");
-const bg_droplets = require("../img/bg_droplets.jpg");
-const cat = require("../img/Cat.jpg");
-const egg = require("../img/egg.png");
-const accountabuddy = require("../img/accountabuddy_sample.gif");
-const profile = require("../img/profile_cropped.png");
+const bg_starry = require("../img/bg_starry.png");
 const profile_bodyshot = require("../img/Profile_Fingerlakes.png");
 const hand = require("../img/illustration_hand.jpg");
 
@@ -21,7 +13,7 @@ const Home = () => {
     <div className="home">
       <header data-aos="zoom-out" data-aos-easing="ease-out-sine">
         <Parallax
-          bgImage={bg_droplets}
+          bgImage={bg_starry}
           strength={800}
           renderLayer={(percent) => (
             <div
