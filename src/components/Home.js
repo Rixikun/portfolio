@@ -70,7 +70,7 @@ const Home = () => {
             <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
               My work
             </h2>
-            <p>
+            <p className="works">
               <Works />
             </p>
           </div>
