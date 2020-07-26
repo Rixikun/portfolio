@@ -2,7 +2,15 @@
 @import "scss/abstracts/mixins";
 
 .home .container .card div .carousel {
+  @include flex-col-spaceEvenly;
+  align-items: center;
+  min-height: 100vh;
   padding: 0;
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
   .maxMobile {
     max-height: calc(15 * 50px);
     max-width: calc(7 * 50px);
@@ -16,14 +24,8 @@
 }
 
 @include breakpoint(upToTablet) {
-  .home .container .card div .carousel {
-    @include flex-col-spaceEvenly;
-    align-items: center;
-    min-height: 100vh;
-  }
   .carousel-inner {
-    display: flex;
-    align-items: center;
+    min-height: 100vh;
   }
   .carousel-indicators {
     bottom: -20px;
