@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const MockCampaign = require("../img/MockCampaign.gif");
 const NewJet = require("../img/NewJet.gif");
 const OldJet = require("../img/OldJet.gif");
+const MobileJet = require("../img/MobileJet.gif");
 const accountabuddy = require("../img/accountabuddy_sample.gif");
 
 const WorkCarousel = () => {
@@ -32,6 +33,16 @@ const WorkCarousel = () => {
           <img className="d-block w-100" src={NewJet} alt="Jetsweat After" />
           <Carousel.Caption>
             <h3>Jetsweat Fitness After</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={MobileJet}
+            alt="Jetsweat Mobile"
+          />
+          <Carousel.Caption>
+            <h3>Jetsweat Fitness Mobile</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
