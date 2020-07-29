@@ -24,22 +24,27 @@
     }
   }
   .container {
-    height: 3000px;
+    position: relative;
+    height: auto;
     margin: auto;
     overflow: clip;
     padding: 0 2rem;
     max-width: 1200px;
+    .sectionContainer {
+      height: auto;
+    }
     .card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 600px;
+      grid-template-rows: 100%;
       grid-gap: 4px;
-      margin: 100px 0 400px 0;
+      margin: 100px 0;
       background: transparent !important;
       border: none;
       img {
         height: 100%;
         width: 100%;
+        object-fit: cover;
       }
       h2,
       p {
@@ -82,17 +87,12 @@
     .verticalLine {
       position: absolute;
       z-index: 1;
-      height: 2700px;
+      height: calc(100% - 300px);
       width: 4px;
       background-color: white;
       left: calc(50% - 2px);
     }
   }
-}
-
-#lastCard {
-  margin-top: 500px;
-  margin-bottom: 100px;
 }
 
 @include breakpoint(upToTablet) {

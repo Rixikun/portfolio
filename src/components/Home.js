@@ -36,66 +36,68 @@ const Home = () => {
         </Parallax>
       </header>
       <main className="container">
-        <div className="verticalLine"></div>
-        <section className="card" data-aos="fade-in">
-          <div
-            className="img__container"
-            data-aos="fade-right"
-            data-aos-easing="ease-out-quart"
-            data-aos-duration="1200"
-            data-aos-delay="200"
-          >
-            <img src={profile_bodyshot} />
-          </div>
-          <div data-aos="fade-left" data-aos-easing="ease-out-quart">
-            <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
-              About me
-            </h2>
-            <p>
-              <About />
-            </p>
-          </div>
-        </section>
-        <section className="card" data-aos="fade-in">
-          <div
-            className="img__container"
-            data-aos="fade-left"
-            data-aos-easing="ease-out-quart"
-            data-aos-duration="1200"
-            data-aos-delay="200"
-          >
-            <WorkCarousel />
-          </div>
-          <div data-aos="fade-right" data-aos-easing="ease-out-quart">
-            <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
-              My work
-            </h2>
-            <p className="works">
-              <Works />
-            </p>
-          </div>
-        </section>
-        <section id="lastCard" className="card" data-aos="fade-in">
-          <div
-            className="img__container"
-            data-aos="fade-right"
-            data-aos-easing="ease-out-quart"
-            data-aos-duration="1200"
-            data-aos-delay="200"
-          >
-            <img src={hand} />
-          </div>
-          <div data-aos="fade-left" data-aos-easing="ease-out-quart">
-            <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
-              Contact me
-            </h2>
-            <p>
-              <a href="mailto:linyianxia@gmail.com">
-                <i className="fa fa-envelope-o"></i> linyianxia@gmail.com
-              </a>
-            </p>
-          </div>
-        </section>
+        <div className="sectionContainer">
+          <div className="verticalLine"></div>
+          <section className="card" data-aos="fade-in">
+            <div
+              className="img__container"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-quart"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <img src={profile_bodyshot} />
+            </div>
+            <div data-aos="fade-left" data-aos-easing="ease-out-quart">
+              <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
+                About me
+              </h2>
+              <p>
+                <About />
+              </p>
+            </div>
+          </section>
+          <section className="card" data-aos="fade-in">
+            <div
+              className="img__container"
+              data-aos="fade-left"
+              data-aos-easing="ease-out-quart"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <WorkCarousel />
+            </div>
+            <div data-aos="fade-right" data-aos-easing="ease-out-quart">
+              <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
+                My work
+              </h2>
+              <p className="works">
+                <Works />
+              </p>
+            </div>
+          </section>
+          <section className="card" data-aos="fade-in">
+            <div
+              className="img__container"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-quart"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <img src={hand} />
+            </div>
+            <div data-aos="fade-left" data-aos-easing="ease-out-quart">
+              <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
+                Contact me
+              </h2>
+              <p>
+                <a href="mailto:linyianxia@gmail.com">
+                  <i className="fa fa-envelope-o"></i> linyianxia@gmail.com
+                </a>
+              </p>
+            </div>
+          </section>
+        </div>
         <Contact />
       </main>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
