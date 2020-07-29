@@ -10,6 +10,9 @@ const Contact = () => {
         <a href="https://github.com/Rixikun">
           <i className="fa fa-github"></i>
         </a>
+        <a href="https://www.behance.net/linyxia">
+          <i className="fa fa-behance"></i>
+        </a>
       </ul>
     </div>
   );
