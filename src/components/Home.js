@@ -39,11 +39,14 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-easing="ease-out-quart"
               data-aos-duration="1200"
-              data-aos-delay="200"
             >
               <img src={profile_bodyshot} />
             </div>
-            <div data-aos="fade-left" data-aos-easing="ease-out-quart">
+            <div
+              data-aos="fade-left"
+              data-aos-easing="ease-out-quart"
+              data-aos-delay="500"
+            >
               <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
                 About me
               </h2>
@@ -58,11 +61,14 @@ const Home = () => {
               data-aos="fade-left"
               data-aos-easing="ease-out-quart"
               data-aos-duration="1200"
-              data-aos-delay="200"
             >
               <WorkCarousel />
             </div>
-            <div data-aos="fade-right" data-aos-easing="ease-out-quart">
+            <div
+              data-aos="fade-right"
+              data-aos-easing="ease-out-quart"
+              data-aos-delay="500"
+            >
               <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
                 My work
               </h2>
@@ -77,11 +83,14 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-easing="ease-out-quart"
               data-aos-duration="1200"
-              data-aos-delay="200"
             >
               <img src={hand} />
             </div>
-            <div data-aos="fade-left" data-aos-easing="ease-out-quart">
+            <div
+              data-aos="fade-left"
+              data-aos-easing="ease-out-quart"
+              data-aos-delay="500"
+            >
               <h2 data-aos="flip-up" data-aos-easing="ease-out-sine">
                 Contact me
               </h2>
