@@ -16,15 +16,10 @@ const Home = () => {
           bgImage={bg_starry}
           strength={800}
           renderLayer={(percent) => (
-            <div
-              className="banner"
-              style={{
-                transform: `scale(${percent * 5})`,
-              }}
-            >
+            <div className="banner">
               <h2
                 style={{
-                  filter: `blur(${-1 + percent * 2.4}px)`,
+                  opacity: `${4 - percent * 5.5}`,
                 }}
               >
                 Welcome
