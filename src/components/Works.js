@@ -44,6 +44,16 @@ const Works = () => {
             </small>
           </p>
         </li>
+        <li>
+          <a href="https://lin-animates.herokuapp.com/">
+            <strong>Animations</strong> - Personal works
+          </a>
+          <p>
+            <small>
+              A collection of css animation works.
+            </small>
+          </p>
+        </li>
       </ul>
     </>
   );
